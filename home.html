@@ -111,6 +111,45 @@
             margin: 100px, auto;
             animation: FadeInOut 10s linear infinite;
         }
+        .covid-care{
+            column-gap:20px;
+            position: absolute;  
+        }
+        .col{
+            width: 200px;
+            padding: 10px;
+            margin: 20px;
+            background-color: rgb(239, 236, 245);
+            float: left; 
+            -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        }
+        .col img {
+            padding:0%;
+            height:auto;
+            width: 200px;
+            height: 100px;
+        }
+        .col h4 {
+            padding:0%; 
+            margin: 0%;
+        }
+        .col p {
+            padding:0%; 
+            margin: 0%;
+            color: blue;
+            font: 13px
+        }
+        .col button{
+            margin-left: 10px;
+            width: 180px;
+            color: orange;
+            font: 18px bold;
+            border:1px solid blue;
+            border-radius: 10px;
+            background-color: rgb(224, 214, 244);
+        }
 
     </style>
 </head>
@@ -147,9 +186,82 @@
         
 
     </div>
-    <div class="imganimation">
+    <div class="imganimation"></div>
+    
+    <div class="cart-container">
+        <div class="covid-care">
+            <h2>Covid Care</h2>
+            <div class="row">
+                <div class="col">
+                    <h4>Covid Test kit</h4>
+                    <img src="Products/c1.jpg">
+                    <p>Rs. 40</p>
+                    <p>Offer: Rs. 30/-</p> 
+                    <button onclick="colorChange(0)">Add to cart</button>   
+                </div>
+                <div class="col">
+                    <h4>Covid Essentials</h4>
+                    <img src="Products/c2.jpg">
+                    <p>Rs. 240</p>
+                    <p>Offer: Rs. 170/-</p>   
+                    <button onclick="colorChange(1)">Add to cart</button>    
+                </div>
+                <div class="col">
+                    <h4>Santizer Bottle</h4>
+                    <img src="Products/c3.jpg">
+                    <p>Rs. 99</p>
+                    <p>Offer: Rs. 87/-</p>   
+                    <button onclick="colorChange(2)">Add to cart</button>    
+                </div>
+                <div class="col">
+                    <h4>Mask</h4>
+                    <img src="Products/c4.jpg">
+                    <p>Rs. 45</p>
+                    <p>Offer: Rs. 30/-</p>   
+                    <button onclick="colorChange(3)">Add to cart</button>    
+                </div>
+            </div>
+            <div class="diabetes-care">
+                <h2>Diabetes Care</h2>
+                <div class="row">
+                    <div class="col">
+                        <h4>Mask</h4>
+                        <img src="Products/d1.jpg">
+                        <p>Rs. 45</p>
+                        <p>Offer: Rs. 30/-</p> 
+                        <button onclick="colorChange(4)">Add to cart</button>   
+                    </div>
+                    <div class="col">
+                        <h4>Mask</h4>
+                        <img src="Products/d2.jpg">
+                        <p>Rs. 45</p>
+                        <p>Offer: Rs. 30/-</p>   
+                        <button onclick="colorChange(5)">Add to cart</button>    
+                    </div>
+                    <div class="col">
+                        <h4>Mask</h4>
+                        <img src="Products/d3.jpg">
+                        <p>Rs. 45</p>
+                        <p>Offer: Rs. 30/-</p>   
+                        <button onclick="colorChange(6)">Add to cart</button>    
+                    </div>
+                    <div class="col">
+                        <h4>Mask</h4>
+                        <img src="Products/d4.png">
+                        <p>Rs. 35</p>
+                        <p>Offer: Rs. 30/-</p>   
+                        <button onclick="colorChange(7)">Add to cart</button>    
+                    </div>
+                </div>
+        </div>
     </div>
-
+    <script type="text/javascript">
+        function colorChange(id) {
+            var element=document.getElementsByClassName("col");
+            element[id].style.backgroundColor = "rgb(250, 234, 230)";
+            element[id].style.borderColor = "rgb(0, 255, 76)";
+        }
+    </script>
     <div class="footer">
         <p>@copyright. Only for demonstration purposes</p>
     </div>

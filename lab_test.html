@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab test</title>
+    <link rel="stylesheet" href="lab_test.css">
+</head>
+<body>
+    <div class="form-bg">
+        <form action="/action.php" id="form-container">
+            <div class="form-section">
+                <h3>1. Your contact details</h3>
+                <input type="text" placeholder="Full Name" name="fullname" required>
+                <input type="text" placeholder="Patient Id if exists" name="patientid" required>
+                <br><br>
+                <input type="text" placeholder="Contact number" name="contactnumber" required>
+                <input type="text" placeholder="Email Id" name="emailid" required>
+            </div>
+            <br>
+            <div class="form-section">
+                <h3>2. Address</h3>
+                <input type="text" placeholder="H No" name="hno" required>
+                <input type="text" placeholder="Street" name="street" required>
+                <br><br>
+                <input type="text" placeholder="Area" name="area" required>
+                <br><br>
+                <label for="district">District</label>
+                <select name="districts" id="districts">
+                    <option>--Choose--</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Mangalore">Mangalore</option>
+                    <option value="Mysore">Mysore</option>
+                    <option value="Hubli">Hubli</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-section">
+                <h3>3. Test Type</h3>
+                <legend>Choose test type (Check atleast one box without fail)</legend>
+                <label><input type="checkbox" id="cbc" name="testtype" value="cbc">CBC</label><br>
+                <label><input type="checkbox" id="completeurine" name="testtype" value="completeurine">Complete Urine</label><br>
+                <label><input type="checkbox" id="lipidprofile" name="testtype" value="lipidprofile">Lipid Profile</label><br>
+                <label><input type="checkbox" id="tsh" name="testtype" value="tsh">Thyroid Stimulating Hormone(TSH)</label><br>
+                <label><input type="checkbox" id="glucosetest" name="testtype" value="glucosetest">Glucose Test</label><br>
+            </div>
+            <br>
+            <div class="form-section">
+                <h3>4. Report</h3>
+                <legend>Do you want a hard copy of the report also?</legend>
+                <input type="radio" name="report" value="yes"> Yes<br>
+                <input type="radio" name="report" value="no"> No<br>
+
+            </div>
+            <br>
+            <div class="form-section">
+                <h3>5. Schedule test</h3>
+                <label for="testdate">Date: </label>
+                <input type="date" id="testdate" name="testdate"><br>
+                <label for="testtime">Time: </label>
+                <input type="time" id="testtime" name="testtime">
+            </div>
+        </form>
+    </div>
+    <div class="btn-parent jc-center">
+        <button type="reset" class="btn" form="form-container">Reset</button>
+        <button type="submit" class="btn" form="form-container">Submit</button>
+    </div>
+</body>
+</html>

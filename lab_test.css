@@ -1,0 +1,46 @@
+.form-bg{
+    margin: 70px;
+    height: 500px;
+    width: 1200px;
+    background-size: 500px;
+    background-position: right;
+    background-image: url("Lab-Test/lab-test.jpg");
+    background-repeat: no-repeat;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    overflow: scroll;
+}
+
+#form-container input{
+    /* width: 100%; */
+    border: none;
+    border-bottom: 1px solid #474747;
+    color: rgba(0, 0, 0, 0.4);
+    background: transparent;
+    font-size: 16px;
+    padding-bottom: 1.25rem;
+    outline: none;
+}
+.form-section{
+    display:inline-block;
+    margin:20px;
+    position: relative;
+    left: 100px;
+    
+}
+.btn-parent{
+    display: flex;
+    
+}
+.jc-center{
+    justify-content:center;
+
+}
+button{
+    margin-right: 20px;
+    background-color: rgb(168, 108, 225);
+    color: white;
+    border-radius: 5px;
+    padding-left:1%;
+    padding-right:1%;
+}
